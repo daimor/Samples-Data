@@ -1,0 +1,10 @@
+[Unit]
+Description=IRIS Data Platform
+After=network.target auditd.service
+
+[Service]
+ExecStart=/usr/bin/iris start iris
+ExecStop=/usr/bin/iris stop iris quietly
+
+[Install]
+WantedBy=multi-user.target
