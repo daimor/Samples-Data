@@ -1,4 +1,3 @@
-image: 
-  file: gitpod.Dockerfile
+image: store/intersystems/iris:2019.3.0.302.0-community
 ports:
   - port: 52773
